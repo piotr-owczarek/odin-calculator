@@ -16,6 +16,7 @@ body {
     padding: 16px;
     flex-direction: column;
     gap: 8px;
+    background-color: grey;
 }
 
 .btns-grid {
@@ -32,8 +33,25 @@ button {
     font-size: 32px;
 }
 
+button:hover,
+#btn-pointer:hover,
+#btn-equal:hover,
+#btn-clear:hover,
+#btn-backspace:hover {
+    background-color: #315f94;
+}
+
+.functional-btns {
+    display: flex;    
+    gap: 8px;
+}
+
 #btn-clear {
-    min-width: 100%;
+    flex: 1;
+}
+
+#btn-backspace {
+    flex: 1;
 }
 
 .screen {
@@ -42,8 +60,30 @@ button {
     border: 2px black solid;
     font-size: 42px;
     text-align: right;
+    background-color: #d1d7de
 }
 
-.screen-last {
+#screen-last {
     font-size: 24px;
+}
+
+.number,
+#btn-pointer {
+    background-color: #d1d7de
+}
+
+.operator {
+    background-color: #8ea4bd;
+}
+
+#btn-equal {
+    background-color: #90bd8e;
+}
+
+#btn-clear {
+    background-color: #e86687;
+}
+
+#btn-backspace {
+    background-color: #e86687;
 }
