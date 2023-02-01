@@ -66,8 +66,10 @@ function appendCurrentScreen(char) {
     if (currentScreen.textContent == '0' || currentScreen.textContent == 'Number is too big' || currentScreen.textContent == 'Dividing by 0') {
         if (char == '.') currentScreen.textContent = '0.';
         else {
-            currentScreen.textContent = '';
-            lastScreen.textContent = '';
+            if (lastScreen.toString().length == 0){
+                currentScreen.textContent = '';
+                lastScreen.textContent = '';
+            }
         }
     }
 
@@ -79,6 +81,7 @@ function appendCurrentScreen(char) {
     shouldResetScreen = false;
 
     if (char == '.' && currentScreen.textContent.includes('.')) return;
+    if (currentScreen.textContent == '0') currentScreen.textContent = '';
     if (currentScreen.textContent.length < 16) currentScreen.textContent += char;
 }
 
