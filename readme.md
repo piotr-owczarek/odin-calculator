@@ -5,8 +5,8 @@ Learning project - calculator.
 
 ## Demo
 
-https://szejku11.github.io/odin-calculator/
+https://piotr-owczarek.github.io/odin-calculator/
 
 ## Authors
 
-- [@szejku11](https://github.com/szejku11)
+- [@piotr-owczarek](https://github.com/piotr-owczarek)
